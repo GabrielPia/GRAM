@@ -1,3 +1,1 @@
-﻿ReadMe
-Mudanças
-OK
+﻿Nothing to commit
