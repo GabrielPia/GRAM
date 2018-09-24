@@ -3,6 +3,7 @@
 </div>
 <div *ngIf = "Detail" class = div-over>
 <ngx-charts-gauge
+  [matTooltip] = "'A temperatura atual eh ' +i+ ' ' "
   tooltipDisabled="false"
   class="openTimesChart"
   [view]= "view"
