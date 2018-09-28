@@ -1,20 +1,18 @@
-<div (click)="showDetails()" class = "div-header">
-    <span class= "Abertura">TEMPERATURA</span> 
+<div  class = "tempchart">
+    <ngx-charts-gauge
+    [matTooltip] = "'A temperatura atual eh ' +i+ ' ' "
+    tooltipDisabled="false"
+    class="openTimesChart"
+    [view]= "view"
+    [results] = "data"
+    [valueFormatting]="valueFormat"
+    [scheme]="colorGaugeScheme"
+    [angleSpan]="240"
+    [startAngle]="-120"
+    [min] = "0"
+    [max] = "10"
+    [bigSegments]="3"
+    [smallSegments]="0">
+  </ngx-charts-gauge>   
 </div>
-<div *ngIf = "Detail" class = div-over>
-<ngx-charts-gauge
-  [matTooltip] = "'A temperatura atual eh ' +i+ ' ' "
-  tooltipDisabled="false"
-  class="openTimesChart"
-  [view]= "view"
-  [results] = "data"
-  [valueFormatting]="valueFormat"
-  [scheme]="colorGaugeScheme"
-  [angleSpan]="240"
-  [startAngle]="-120"
-  [min] = "0"
-  [max] = "10"
-  [bigSegments]="3"
-  [smallSegments]="0">
-</ngx-charts-gauge>
-</div>
+

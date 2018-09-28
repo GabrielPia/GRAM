@@ -4,10 +4,16 @@
     <span class="head-text">Gram Solutions</span>
 </div>
 <div class="div-navbar" [class.showbar]="showNavbar">
-    
+    <div class="list" [class.showlist]="showList" (click)="showTempChart()">
+        <span class="temp-span" [class.showspan]="showList">Temperatura</span>
+    </div>
+    <div *ngIf="TempChart">
+        <app-temperature-chart></app-temperature-chart>
+    </div>
+    <span></span>
 </div>
 
-<app-temperature-chart></app-temperature-chart>
+
 
 
 

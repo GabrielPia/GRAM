@@ -14,6 +14,14 @@
       opacity:.6;
       font-size:30px
   }
+  .tempchart{
+    width:420px;
+    height:240px;
+    transition:0.4s;
+    background-color: rgba(241, 239, 239, 1);
+    border:1px solid rgba(39, 39, 39, 0.452);
+    z-index:1;
+}
   .openTimesChart{
       position:absolute;
       top:-10px;

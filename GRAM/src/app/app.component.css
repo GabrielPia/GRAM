@@ -31,12 +31,38 @@
 .div-navbar{
     height:100%;
     width:0px;
-   
-    background-color: rgba(241, 239, 239, 0.87);
+    background-color: rgba(241, 239, 239, 1);
     border:1px solid rgba(0,0,0,.4);
     transition:0.4s;
-    
 }
+.list{
+    height:60px;
+    width:0px;
+    background-color: rgba(241, 239, 239, 1);
+    border:1px solid rgba(39, 39, 39, 0.452);
+    line-height: 60px;
+    transition: 0.4s;
+    text-align:center;
+}
+.list:hover{
+    cursor:pointer;
+    background-color: rgba(175, 170, 170, 0.7);
+}
+.showlist{
+    width:200px !important;
+}
+.temp-span{
+    font-size:15px;
+    position:absolute;
+    left:-200px;
+    transition:0.4s;
+    z-index:10;
+}
+
+.showspan{
+    left:50px;
+}
+
 .showbar{
     width:200px !important;
     box-shadow: 1px 0px 3px black;
