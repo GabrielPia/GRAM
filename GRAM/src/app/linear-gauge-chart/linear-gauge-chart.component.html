@@ -1,0 +1,16 @@
+<div (click)="showDetails()" class = "div-header">
+    <span class= "Abertura">ABERTURA</span> 
+    </div>
+    <div *ngIf = "Detail" class = div-over>
+    <ngx-charts-linear-gauge 
+    class="openTimesChart" 
+    [matTooltip] = "'A porta abriu '+OpenTimes+'vezes'"
+    [view]="view" 
+    [valueFormatting]="valueFormat"
+    [scheme]="colorGaugeScheme"  
+    [min]="0"
+    [max]="OpenTimes" 
+    [units]="''" 
+    [value]="OpenTimes" >
+    </ngx-charts-linear-gauge>
+    </div>

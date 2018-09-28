@@ -9,33 +9,18 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  Detail = false;
-  OpenTimes = 30;
-  title = 'GRAM';
-  Open = "A porta foi aberta: "+30+" vezes";
-  view: any[] = [230, 150];
-  showLegend = true;
-  colorGaugeScheme = this.colorDefinition();
+  showNavbar:boolean = false;
+  
 
-  colorDefinition(){
-    if(this.OpenTimes>0 && this.OpenTimes < 50){
-        return {
-          domain: ['rgba(0, 198, 180,.7)']
-        };
-    }
-    else{
-     return {
-        domain: ['rgba(255,0,0),.7']
-      };
+  Show(x:number){
+    if(x == 1){
+      if(this.showNavbar == false){
+      this.showNavbar = true;
+      }else{
+        this.showNavbar = false;
+      }
     }
   }
 
-  showDetails(){
-    if(this.Detail == false){
-      this.Detail = true;
-    }
-    else{
-      this.Detail = false;
-    }
-  }
+  
 }

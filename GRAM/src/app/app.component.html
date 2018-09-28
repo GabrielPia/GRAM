@@ -1,21 +1,12 @@
 
-<div class="Head">Charts</div>
-<div (click)="showDetails()" class = "div-header">
-<span class= "Abertura">ABERTURA</span> 
+<div class="Head">
+    <i class = "material-icons menu" (click)="Show(1)">menu</i>
+    <span class="head-text">Gram Solutions</span>
 </div>
-<div *ngIf = "Detail" class = div-over>
-<ngx-charts-linear-gauge 
-class="openTimesChart" 
-[matTooltip] = "'A porta abriu '+OpenTimes+'vezes'"
-[view]="view" 
-[valueFormatting]="valueFormat"
-[scheme]="colorGaugeScheme"  
-[min]="0"
-[max]="OpenTimes" 
-[units]="''" 
-[value]="OpenTimes" >
-</ngx-charts-linear-gauge>
+<div class="div-navbar" [class.showbar]="showNavbar">
+    
 </div>
+
 <app-temperature-chart></app-temperature-chart>
 
 
