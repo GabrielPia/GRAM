@@ -21,9 +21,6 @@
       -webkit-animation-name:appear;
       -webkit-animation-duration: 1s;
   }
-  .openTimesChart:hover{
-      transform: scale(1.2,1.2);
-  }
   
   .div-over{
       text-align:center;
